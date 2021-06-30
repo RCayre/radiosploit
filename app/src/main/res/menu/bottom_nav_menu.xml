@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_zigbee"
+        android:icon="@drawable/ic_zigbee"
+        android:title="@string/title_zigbee" />
+
+    <item
+        android:id="@+id/navigation_mosart"
+        android:icon="@drawable/ic_mosart"
+        android:title="@string/title_mosart" />
+
+    <item
+        android:id="@+id/navigation_esb"
+        android:icon="@drawable/ic_esb"
+        android:title="@string/title_esb" />
+
+</menu>

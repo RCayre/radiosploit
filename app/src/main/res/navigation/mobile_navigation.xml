@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_zigbee">
+
+    <fragment
+        android:id="@+id/navigation_zigbee"
+        android:name="laas.rcayre.radiosploit.ui.zigbee.ZigbeeFragment"
+        android:label="@string/title_zigbee"
+        tools:layout="@layout/fragment_zigbee" />
+
+    <fragment
+        android:id="@+id/navigation_mosart"
+        android:name="laas.rcayre.radiosploit.ui.mosart.MosartFragment"
+        android:label="@string/title_mosart"
+        tools:layout="@layout/fragment_mosart" />
+
+    <fragment
+        android:id="@+id/navigation_esb"
+        android:name="laas.rcayre.radiosploit.ui.esb.EsbFragment"
+        android:label="@string/title_esb"
+        tools:layout="@layout/fragment_esb" />
+</navigation>

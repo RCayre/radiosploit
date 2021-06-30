@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="laas.rcayre.radiosploit.ui.zigbee.ZigbeeTxFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ProgressBar
+        android:id="@+id/zigbee_tx_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zigbee_add_packet_floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="Add new packet"
+        android:src="@drawable/ic_add"
+        android:translationY="-50dp"
+        app:backgroundTint="@color/purple_500" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zigbee_tx_reset_button"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset" />
+
+        <ToggleButton
+            android:id="@+id/zigbee_tx_toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Start"
+            android:textOff="START TX"
+            android:textOn="STOP TX" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|fill|top"
+        android:layout_marginTop="70sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/zigbee_tx_channel_label"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="10sp"
+            android:text="CH:14"
+            android:textSize="14sp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/zigbee_tx_channel_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layerType="none"
+            android:stepSize="1.0"
+            android:value="14"
+            android:valueFrom="11.0"
+            android:valueTo="26.0"
+            app:labelBehavior="floating" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/zigbee_tx_packet_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120sp"
+        android:layout_marginBottom="60sp"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="317dp"
+        tools:listitem="@layout/packet_view_item" />
+
+
+</FrameLayout>

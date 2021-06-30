@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/mosart_rx_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Address:" />
+
+        <EditText
+            android:id="@+id/mosart_rx_address_textentry"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:digits="0123456789ABCDEF:"
+            android:ems="10"
+            android:inputType="textCapCharacters"
+            android:text="F0:BF:1E:86" />
+
+        <Button
+            android:id="@+id/mosart_rx_reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RESET" />
+
+        <ToggleButton
+            android:id="@+id/mosart_rx_toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="START RX"
+            android:textOn="STOP RX" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mosart_rx_channel_label"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="10sp"
+            android:text="CH:36"
+            android:textSize="14sp" />
+
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/mosart_rx_channel_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="right"
+            android:layerType="none"
+            android:stepSize="1.0"
+            android:value="36"
+            android:valueFrom="2.0"
+            android:valueTo="80.0"
+            app:labelBehavior="floating" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mosart_rx_packet_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="317dp"
+        tools:listitem="@layout/packet_view_item" />
+</LinearLayout>
+

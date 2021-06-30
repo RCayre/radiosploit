@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RadioSploit</string>
+    <string name="title_zigbee">Zigbee</string>
+    <string name="title_mosart">Mosart</string>
+    <string name="title_esb">Enhanced ShockBurst</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
