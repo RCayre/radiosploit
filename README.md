@@ -19,13 +19,14 @@ This application is released as an opensource software using the MIT License.
 
 Screenshots
 ============
-![](screenshots/zigbeerx.jpg | width=250)
-![](screenshots/zigbeetx.jpg | width=250)
-![](screenshots/mosartscan.jpg | width=250)
-![](screenshots/mosartkeylogger.jpg | width=250)
-![](screenshots/mosartrx.jpg | width=250)
-![](screenshots/esbrx.jpg | width=250)
-![](screenshots/esbtx.jpg | width=250)
+![](screenshots/zigbeerx_small.jpg)
+![](screenshots/zigbeetx_small.jpg)
+![](screenshots/zigbeedissector_small.jpg)
+![](screenshots/mosartscan_small.jpg)
+![](screenshots/mosartkeylogger_small.jpg)
+![](screenshots/mosartrx_small.jpg)
+![](screenshots/esbrx_small.jpg)
+![](screenshots/esbtx_small.jpg)
 
 How to use this application ? 
 ==============================
