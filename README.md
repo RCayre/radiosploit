@@ -19,13 +19,13 @@ This application is released as an opensource software using the MIT License.
 
 Screenshots
 ============
-![](screenshots/zigbeerx.jpg)
-![](screenshots/zigbeetx.jpg)
-![](screenshots/mosartscan.jpg)
-![](screenshots/mosartkeylogger.jpg)
-![](screenshots/mosartrx.jpg)
-![](screenshots/esbrx.jpg)
-![](screenshots/esbtx.jpg)
+![](screenshots/zigbeerx.jpg =250x)
+![](screenshots/zigbeetx.jpg =250x)
+![](screenshots/mosartscan.jpg =250x)
+![](screenshots/mosartkeylogger.jpg =250x)
+![](screenshots/mosartrx.jpg =250x)
+![](screenshots/esbrx.jpg =250x)
+![](screenshots/esbtx.jpg =250x)
 
 How to use this application ? 
 ==============================
