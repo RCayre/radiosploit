@@ -18,7 +18,7 @@ This project is a Proof of Concept developed in the context of a research work a
 This application is released as an opensource software using the MIT License.
 
 Screenshots
-============
+------------
 ![](screenshots/zigbeerx_small.jpg)
 ![](screenshots/zigbeetx_small.jpg)
 ![](screenshots/zigbeedissector_small.jpg)
@@ -29,8 +29,9 @@ Screenshots
 ![](screenshots/esbtx_small.jpg)
 
 How to use this application ? 
-==============================
+------------------------------
 * First, you need to root your Samsung Galaxy S20: it should also work on Samsung Galaxy S10, but it has not been tested yet. Multiple tutorials can be found online to enable root.
+* Enable the Bluetooth Debugging (BTsnoop logs) in your smartphone settings.
 * Then, you have to install the Radiosploit patches on your Bluetooth controller. The patches are uploaded on a different repository, follow [these instructions](https://github.com/RCayre/radiosploit_patches) !
 * Finally, you can install the application using adb:
 ```
